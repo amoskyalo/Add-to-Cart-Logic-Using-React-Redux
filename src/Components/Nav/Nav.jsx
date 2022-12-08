@@ -43,7 +43,7 @@ const Nav = () => {
         <Link to="/cart" className="relative">
           <AiOutlineShoppingCart className="text-white text-2xl" />
           <p className="bg-cartColor text-sm text-white absolute -right-3 -top-3 px-1.5 rounded-full">
-            {cart.length}
+            {cart?.length}
           </p>
         </Link>
       </div>

@@ -26,7 +26,7 @@ const Product = () => {
       <div className="flex flex-col items-center mt-3">
         <h2 className="text-xl font-semibold">{product.title}</h2>
         <div className="flex flex-row items-center space-x-2">
-          <AiOutlineStar /> <AiOutlineStar /> <AiOutlineStar />{" "}
+          <AiOutlineStar /> <AiOutlineStar /> <AiOutlineStar />
           <AiOutlineStar /> <AiOutlineStar /> (2)
         </div>
         <p>Kshs.{product.price}</p>

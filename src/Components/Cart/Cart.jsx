@@ -9,13 +9,18 @@ const Cart = () => {
   const data = useSelector(cartData);
   const dispatch = useDispatch();
   const removeCartFunc = (id) => {
-    dispatch(removeCart({ id }));
+    dispatch(removeCart(id));
   };
   const increase = (item) => {
     dispatch(increaseData(item));
   };
   const decrease = (item) => {
-    dispatch(decreaseData(item));
+    const id = item.id;
+    if (item.quantity <= 1) {
+      dispatch(removeCart(id));
+    } else {
+      dispatch(decreaseData(item));
+    }
   };
 
   return (
@@ -25,10 +30,10 @@ const Cart = () => {
           <div className="flex flex-row justify-between border-b">
             <h2 className="text-xl font-bold">Cart</h2>
             <h2 className="text-xl font-bold">
-              {data.length} {data.length <= 1 ? "Item" : "Itmes"}
+              {data?.length} {data?.length <= 1 ? "Item" : "Items"}
             </h2>
           </div>
-          {!data.length ? (
+          {!data?.length ? (
             <EmptyCart />
           ) : (
             data.map((cartItem, i) => (
@@ -50,7 +55,7 @@ const Cart = () => {
                 <div className="flex flex-row space-x-2 items-center">
                   <AiOutlineMinus
                     className="border text-2xl cursor-pointer"
-                    onClick={() => decrease(cartItem.id)}
+                    onClick={() => decrease(cartItem)}
                   />
                   <p className="text-base">{cartItem.quantity}</p>
                   <GrFormAdd
