@@ -40,11 +40,14 @@ const Nav = () => {
             Contact Us
           </Link>
         </div>
-        <Link to="/cart" className="relative">
-          <AiOutlineShoppingCart className="text-white text-2xl" />
-          <p className="bg-cartColor text-sm text-white absolute -right-3 -top-3 px-1.5 rounded-full">
-            {cart?.length}
-          </p>
+        <Link to="/cart" className="flex flex-row space-x-3">
+          <div to="/cart" className="relative">
+            <AiOutlineShoppingCart className="text-white text-2xl" />
+            <p className="flex justify-center items-center bg-cartColor text-sm text-white absolute -right-3 -top-2 h-4 w-4 rounded-full">
+              {cart?.length}
+            </p>
+          </div>
+          <p className="text-white text-xl font-semibold">Cart</p>
         </Link>
       </div>
     </nav>

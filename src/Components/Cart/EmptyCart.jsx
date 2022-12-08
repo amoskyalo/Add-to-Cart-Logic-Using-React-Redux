@@ -7,7 +7,7 @@ const EmptyCart = () => {
     <div className="flex flex-col items-center">
       <img src={emoji} alt="cart-emoji" className="h-24 w-24" />
       <h2 className="my-1">Ooops! You cart is empty</h2>
-      <Link to="/" className="bg-navColor text-white px-5 py-1.5 rounded-lg">
+      <Link to="/" className="bg-navColor text-white px-5 py-1.5 rounded">
         Start Shopping
       </Link>
     </div>
