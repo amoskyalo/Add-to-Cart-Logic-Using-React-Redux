@@ -27,6 +27,7 @@ It will be wise if I mention the technologies I used in this simple application.
   ### 1. React Redux
   React redux is a state management liblary. From the official docs, they say
   > React Redux is the official React UI bindings layer for Redux. It lets your React components read data from a Redux store, and dispatch actions to the store to update state.
+
 Redux helps you manage the state of your application globaly. 
 To install React Redux to your application, you will run `npm i react-redux`
 To read more about React Redux, you can read the official [ docummentation here](https://react-redux.js.org/)
