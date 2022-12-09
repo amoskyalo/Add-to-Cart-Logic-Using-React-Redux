@@ -3,6 +3,7 @@
 Hello there developer, stuck with adding items to your cart? Then you are in the right place!
 
 ## About this project
+![WhatsApp Image 2022-12-09 at 15 17 50](https://user-images.githubusercontent.com/91586973/206700973-c12b8e94-2197-46fb-8ebf-99305e20b6dd.jpeg)
 After reading about React Redux, I decided to test my understanding by building this simple project where you can add items to cart. You can check the live demo of the project here. This is what I was able to implement in this project:
   - Add an item to cart. 
   - Delete an item from cart.
