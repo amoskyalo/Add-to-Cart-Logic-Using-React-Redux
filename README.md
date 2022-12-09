@@ -25,8 +25,8 @@ After reading about React Redux, I decided to test my understanding by building 
 It will be wise if I mention the technologies I used in this simple application. If you want to read more about them, I will provide the links to the official documentations:
 
   ### 1. React Redux
-  React redux is a state management liblary. From the official docs, they say
-  > React Redux is the official React UI bindings layer for Redux. It lets your React components read data from a Redux store, and dispatch actions to the store to update state.
+  React redux is a state management liblary. 
+  > From the official docs, they say, React Redux is the official React UI bindings layer for Redux. It lets your React components read data from a Redux store, and dispatch actions to the store to update state.
 
 Redux helps you manage the state of your application globaly. 
 To install React Redux to your application, you will run `npm i react-redux`
@@ -46,7 +46,9 @@ If you want to dig deeper into React Redux toolkit, you can do that [here](https
   To dig deeper into Redux Persist, visit the official [docs](https://www.npmjs.com/package/redux-persist)
   
   ### 4. React Router
-  To navigate to different locations in our application, we will need React Router, to enable routing. For example, navigating to cart page. From the official docs, they say > React Router enables "client side routing". 
+  To navigate to different locations in our application, we will need React Router, to enable routing. For example, navigating to cart page. 
+  > From the official docs, they say, React Router enables "client side routing". 
+  
   To install React Router, you can run `npm i react-router`
   React Router contains three packages:
    - React Router
@@ -55,6 +57,7 @@ If you want to dig deeper into React Redux toolkit, you can do that [here](https
   React-router-dom is the package designed for web applications. So you will also need to install this package.
   To install React-router-dom, you will run `npm i react-router-dom`
   Check the official React Router documentations [here](https://reactrouter.com/en/main/start/overview)
+  
   ### 5. React Icons
   Of course I used some icons in this application, like the cart icons. I used react icons. 
   To install react icons package, run `npm i react-icons`
