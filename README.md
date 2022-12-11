@@ -54,6 +54,7 @@ If you want to dig deeper into React Redux toolkit, you can do that [here](https
    - React Router
    - React-router-native
    - React-router-dom
+ 
  React-router-dom is the package designed for web applications. So you will also need to install this package.
  To install React-router-dom, you will run `npm i react-router-dom`
  Check the official React Router documentations [here](https://reactrouter.com/en/main/start/overview)
