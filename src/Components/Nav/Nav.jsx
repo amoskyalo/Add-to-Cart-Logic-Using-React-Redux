@@ -26,7 +26,7 @@ const Nav = () => {
         <Link to="/" className="flex">
           <h2 className="text-white text-2xl font-black">Logo</h2>
         </Link>
-        <div className="flex flex-row space-x-5">
+        <div className="hidden flex-row space-x-5 md:flex">
           <Link to="/" className="text-white font-semibold text-lg">
             Home
           </Link>

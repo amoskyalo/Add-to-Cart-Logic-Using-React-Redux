@@ -34,9 +34,9 @@ const Cart = () => {
   };
 
   return (
-    <section className="max-w-screen-lg mx-auto mt-10">
-      <div className="flex flex-row space-x-1">
-        <div className="flex flex-col space-y-4 w-3/4 bg-white p-4 rounded h-max">
+    <section className="max-w-screen-lg mx-auto md:mt-10">
+      <div className="flex flex-col space-y-2 md:space-y-0 md:space-x-1 md:flex-row">
+        <div className="flex flex-col space-y-4 bg-white p-4 rounded h-max md:w-3/4">
           <div className="flex flex-row justify-between border-b">
             <h2 className="text-xl font-bold">Cart</h2>
             <h2 className="text-xl font-bold">
@@ -55,7 +55,7 @@ const Cart = () => {
                   <img
                     src={cartItem.img}
                     alt=""
-                    className="h-24 w-24 object-contain rounded-full"
+                    className="h-16 w-16 object-contain rounded-full md:h-24 md:w-24"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -83,7 +83,7 @@ const Cart = () => {
             ))
           )}
         </div>
-        <div className="flex flex-col bg-white p-4 h-max w-1/4 rounded">
+        <div className="flex flex-col bg-white p-4 h-max rounded md:w-1/4">
           <p className="text-xl font-semibold block border-b pb-1">
             Cart Summary
           </p>
