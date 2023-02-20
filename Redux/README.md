@@ -23,6 +23,7 @@ The standard Redux usage pattern is by using both Redux and Redux toolkit. Redux
 After instalation, you need to wrap your entire project within the `Provider` component. This is to ensure that your Redux store is available to all components in your React components.
 
 ```
+
     import React from 'react';
     import { Provider } from 'react-redux';
     import App from './App';
@@ -34,6 +35,7 @@ After instalation, you need to wrap your entire project within the `Provider` co
     );
 
     export default App;
+
 ```
 
 Provider component accept store as a prop. So we need to create a store
@@ -44,6 +46,7 @@ Provider component accept store as a prop. So we need to create a store
     To create a store, we need to import `configureStore` from redux toolkit. This is a function which is used to create a store object. The reducer function is responsible for specifying how the state of the application changes in response to actions.
 
     ```
+
     import { createStore } from 'redux';
 
     const store = createStore({
@@ -61,6 +64,7 @@ Provider component accept store as a prop. So we need to create a store
     Here is an example.
 
     ```
+
         import { createSlice } from '@reduxjs/toolkit';
 
         const initialState = []
