@@ -14,7 +14,7 @@ Overall, React Redux is a powerful tool for managing the state of a React applic
 
 The standard Redux usage pattern is by using both Redux and Redux toolkit. Redux toolkit makes it easier to write redux code by providing a set of tools and best practices.
 
-    - Installation.
+    Installation.
 
     You need to install React redux and the redux toolkit packages to your projects:
 
