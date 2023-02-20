@@ -57,20 +57,22 @@ export default store;
 This is a pre-defined bundle of a Redux reducer logic that handles a specific section of the application state. It contains the reducer function, as well as the action types and action creators for updating that section of the state. Slices are created using the `createSlice()` function from the Redux Toolkit. createSlice function takes in initialState, name and reducers as its arguments. `name` is ussualy a string name for the slice, `initialState` is the initial value of the slice while reducers is an object that defines the reducer functions for handling actions that updat the slice's state.
 Here is an example.
 
-```import { createSlice } from '@reduxjs/toolkit';
-    const initialState = []
-    const cartSlice = createSlice({
-        name: 'cart',
-        initialState,
-        reducers: {},
-    })
+```
+import { createSlice } from '@reduxjs/toolkit';
+const initialState = []
+const cartSlice = createSlice({
+    name: 'cart',
+    initialState,
+    reducers: {},
+})
 ```
 
 #### Updating our state with actions
 
 In redux, we use actions to update our state, once we dispatch them. Actions contains payload, which is the necessary data required to perfom an action. Here is an updates Slice with action to add products to cart.
 
-```import { createSlice } from '@reduxjs/toolkit';
+```
+import { createSlice } from '@reduxjs/toolkit';
     const initialState = []
     const cartSlice = createSlice({
         name: 'cart',
