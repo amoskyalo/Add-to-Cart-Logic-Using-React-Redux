@@ -42,24 +42,22 @@ Provider component accept store as a prop. So we need to create a store
 
 #### Redux Store
 
-    In Redux, the store is a plain JavaScript object that holds the entire state of a Redux application. It is the central place where the state of the application is stored, and all changes to the state are made through actions.
-    To create a store, we need to import `configureStore` from redux toolkit. This is a function which is used to create a store object. The reducer function is responsible for specifying how the state of the application changes in response to actions.
+In Redux, the store is a plain JavaScript object that holds the entire state of a Redux application. It is the central place where the state of the application is stored, and all changes to the state are made through actions.
+To create a store, we need to import `configureStore` from redux toolkit. This is a function which is used to create a store object. The reducer function is responsible for specifying how the state of the application changes in response to actions.
 
-    ```import { createStore } from 'redux';
-    const store = createStore({
-        reducer: {}
-    });
-
-    export default store;
-    ```
-    
+```import { createStore } from 'redux';
+const store = createStore({
+    reducer: {}
+});
+export default store;
+```
 
 #### Creating redux slices
 
 This is a pre-defined bundle of a Redux reducer logic that handles a specific section of the application state. It contains the reducer function, as well as the action types and action creators for updating that section of the state. Slices are created using the `createSlice()` function from the Redux Toolkit. createSlice function takes in initialState, name and reducers as its arguments. `name` is ussualy a string name for the slice, `initialState` is the initial value of the slice while reducers is an object that defines the reducer functions for handling actions that updat the slice's state.
 Here is an example.
 
-``` import { createSlice } from '@reduxjs/toolkit';
+```import { createSlice } from '@reduxjs/toolkit';
     const initialState = []
     const cartSlice = createSlice({
         name: 'cart',
@@ -71,7 +69,8 @@ Here is an example.
 #### Updating our state with actions
 
 In redux, we use actions to update our state, once we dispatch them. Actions contains payload, which is the necessary data required to perfom an action. Here is an updates Slice with action to add products to cart.
-``` import { createSlice } from '@reduxjs/toolkit';
+
+```import { createSlice } from '@reduxjs/toolkit';
     const initialState = []
     const cartSlice = createSlice({
         name: 'cart',
