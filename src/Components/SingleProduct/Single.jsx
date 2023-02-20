@@ -20,9 +20,12 @@ const Single = () => {
   };
 
   return (
-    <div className="bg-white mx-auto p-5 md:p-10 md:max-w-[70%] md:mt-10">
+    <div className="bg-white mx-auto p-5 md:p-24 max-w-4xl md:mt-10 xl:max-w-5xl">
       {products.map((singleProduct, i) => (
-        <div className="flex flex-col space-y-20 md:flex-row md:space-x-10 md:space-y-0" key={i}>
+        <div
+          className="flex flex-col space-y-20 md:flex-row md:space-x-10 md:space-y-0"
+          key={i}
+        >
           <div className="h-48 border-b flex flex-col md:w-1/3 md:border-b-0">
             <img
               src={singleProduct.img}

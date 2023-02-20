@@ -34,8 +34,8 @@ const Cart = () => {
   };
 
   return (
-    <section className="max-w-screen-lg mx-auto md:mt-10">
-      <div className="flex flex-col space-y-2 md:space-y-0 md:space-x-1 md:flex-row">
+    <section className="mx-auto max-w-4xl md:mt-10 xl:max-w-5xl">
+      <div className="flex flex-col space-y-2 md:space-y-0 md:space-x-5 md:flex-row">
         <div className="flex flex-col space-y-4 bg-white p-4 rounded h-max md:w-3/4">
           <div className="flex flex-row justify-between border-b">
             <h2 className="text-xl font-bold">Cart</h2>

@@ -16,29 +16,29 @@ const Nav = () => {
     return setSticky("#");
   });
 
+  const navLinks = [
+    { name: "Home" },
+    { name: "About" },
+    { name: "Shop" },
+    { name: "Contact Us" },
+  ];
+
   return (
     <nav
       className={`bg-navColor px-5 py-3 w-full ${
         sticky === "sticky" ? `sticky top-0` : ""
       }`}
     >
-      <div className="flex flex-row justify-between items-center max-w-screen-lg mx-auto">
+      <div className="flex flex-row justify-between items-center max-w-4xl mx-auto xl:max-w-5xl">
         <Link to="/" className="flex">
           <h2 className="text-white text-2xl font-black">Logo</h2>
         </Link>
         <div className="hidden flex-row space-x-5 md:flex">
-          <Link to="/" className="text-white font-semibold text-lg">
-            Home
-          </Link>
-          <Link to="/" className="text-white font-semibold text-lg">
-            About
-          </Link>
-          <Link to="/" className="text-white font-semibold text-lg">
-            Shop
-          </Link>
-          <Link to="/" className="text-white font-semibold text-lg">
-            Contact Us
-          </Link>
+          {navLinks.map((navLink, i) => (
+            <Link to="/" className="text-white font-semibold text-lg">
+              {navLink.name}
+            </Link>
+          ))}
         </div>
         <Link to="/cart" className="flex flex-row space-x-3">
           <div to="/cart" className="relative">
